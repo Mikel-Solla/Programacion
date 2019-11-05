@@ -19,7 +19,15 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         int [] num;
         int array=Integer.parseInt(JOptionPane.showInputDialog("De que tamaño quieres el array?"));
-        num=new int
+        num=new int[array];
+        int suma=0;
+        int x;
+        for(x=0;x<num.length;x++){
+            num[x]=(int)(Math.random()*10);
+            suma=suma+num[x];
+            JOptionPane.showMessageDialog(null,num[x]);
+        }
+        JOptionPane.showMessageDialog(null,"La suma total es "+suma);
     }
     
 }
