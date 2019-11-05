@@ -31,7 +31,7 @@ public class Ejercicio1 {
                 if(nums[x]<numMin)
                     numMin=nums[x];
         }
-        JOptionPane.showMessageDialog(null,"El numero mas grande es "+numMin+" y el numero mas pequeño es "+numMax);
+        JOptionPane.showMessageDialog(null,"El numero mas pequeño es "+numMin+" y el numero mas grande es "+numMax);
     }
     
     
