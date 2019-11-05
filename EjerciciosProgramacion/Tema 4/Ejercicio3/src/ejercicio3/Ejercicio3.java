@@ -5,6 +5,8 @@
  */
 package ejercicio3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 1GDAW08
@@ -26,6 +28,30 @@ public class Ejercicio3 {
         abecedario[7]='H';
         abecedario[8]='I';
         abecedario[9]='J';
+        abecedario[10]='K';
+        abecedario[11]='L';
+        abecedario[12]='M';
+        abecedario[13]='N';
+        abecedario[14]='Ñ';
+        abecedario[15]='O';
+        abecedario[16]='P';
+        abecedario[17]='Q';
+        abecedario[18]='R';
+        abecedario[19]='S';
+        abecedario[20]='T';
+        abecedario[21]='U';
+        abecedario[22]='V';
+        abecedario[23]='W';
+        abecedario[24]='X';
+        abecedario[25]='Y';
+        abecedario[26]='Z';
+        String cadena="";
+        int posicion=Integer.parseInt(JOptionPane.showInputDialog("Introduce posicion"));
+        while(posicion!=(-1)){
+            cadena +=abecedario[posicion];
+            posicion=Integer.parseInt(JOptionPane.showInputDialog("Introduce posicion"));
+        }
+        JOptionPane.showMessageDialog(null, cadena);
     }
     
 }
