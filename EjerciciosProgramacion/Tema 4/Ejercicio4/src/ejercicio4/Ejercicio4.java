@@ -5,6 +5,8 @@
  */
 package ejercicio4;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 1GDAW08
@@ -28,7 +30,20 @@ public class Ejercicio4 {
         mes[9]="OCTUBRE";
         mes[10]="NOVIEMBRE";
         mes[11]="DICIEMBRE";
-        
+        try{
+        String m=JOptionPane.showInputDialog("Introduce un mes");
+        m=m.toUpperCase();
+        for (String me : mes) {
+            if (m.contentEquals(me)) 
+                JOptionPane.showMessageDialog(null, "Mes escrito correctamente");  
+        }
+        }
+        catch(ArithmeticException e){
+            JOptionPane.showMessageDialog(null, "Mal excrito");
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Ha saltado algun error");
+        }
     }
     
 }
