@@ -16,9 +16,9 @@ public class EjercicioMenu {
     
     
     public static void main(String[] args) {
-        
         int num1;
         int num2;
+        try{
         int elegir=Integer.parseInt(JOptionPane.showInputDialog("1-Suma\n2-Resta\n3-Tabla de multiplicar\n4-Cociente y resto de division\n5-Salir"));
         switch(elegir){
             case 1:
@@ -54,6 +54,16 @@ public class EjercicioMenu {
             default:
                 JOptionPane.showMessageDialog(null, "No has elegido nada");
         }
-    }
+        
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Introduce un numero");
+        }
+        }
+        }
+            
+        
     
-}
+
+    
+

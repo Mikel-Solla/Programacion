@@ -19,15 +19,15 @@ public class Ejercicio5 {
     
     public static void main(String[] args) {
         int [][] fecha=new int[12][31];
-        try{
+        
         String comienzo=JOptionPane.showInputDialog("¿Quieres empezar?");
         while(comienzo.equalsIgnoreCase("Si")){
             try{
             int mes=Integer.parseInt(JOptionPane.showInputDialog("Introduce el mes"));
-            for(int x=0;x<fecha[12].length;x++){
+            for(int x=0;x<fecha.length;x++){
                 if(mes==x){
                 int dia=Integer.parseInt(JOptionPane.showInputDialog("Introduce el dia"));
-                for(int y=0;y<fecha[31].length;y++){
+                for(int y=0;y<fecha.length;y++){
                     if(dia==y){
                         int litro=Integer.parseInt(JOptionPane.showInputDialog("Introduce los litros"));
                         
@@ -47,14 +47,10 @@ public class Ejercicio5 {
         catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "Escribe numeros");
         } 
-            catch(ArrayIndexOutOfBoundsException e){
-            JOptionPane.showMessageDialog(null, "Escribe un dia/mes");
-        }
+            
         }
     }
-        catch(ArrayIndexOutOfBoundsException e){
-            JOptionPane.showMessageDialog(null, "Escribe un dia/mes");
-        }
+        
         
     }
-}
+
