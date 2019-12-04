@@ -6,25 +6,12 @@ import java.util.Collections;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author 1GDAW08
- */
 public class Ejercicio1 {
-
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
         ArrayList <Double> lista=new ArrayList();
-        
         llenar(lista);
-       
-        JOptionPane.showMessageDialog(null,lista);
-       
-        menu(lista);
-       
-        
+        menu(lista);  
     }
     
     public static void llenar(ArrayList lista){
@@ -52,11 +39,7 @@ public class Ejercicio1 {
                 + "10. Finalizar."));
         switch(menu){
             case 1:
-               
                caso1(lista);
-               
-               
-               
                 break;
             case 2:
                 double busc=Double.parseDouble(JOptionPane.showInputDialog("Que numero quieres buscar?"));
@@ -145,8 +128,9 @@ public class Ejercicio1 {
     }
     
     public static void caso1(ArrayList lista){
-        JOptionPane.showMessageDialog(null, Collections.max(lista)+"/"+Collections.min(lista));
+        JOptionPane.showMessageDialog(null, "El numero mas alto es el "+Collections.max(lista)+"/"+Collections.min(lista));
     }
+    
     /*Falta por hacer*/
     public static void caso9(ArrayList lista){
         double total;
